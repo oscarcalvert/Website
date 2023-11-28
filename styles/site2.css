@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Open+Sans&family=Oswald&family=Poppins:wght@500&family=Source+Sans+3&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+:root {
+    --mainColor1: #810bff;
+    --mainColor2: #0ac0f8;
+    --backgroundColor: #fbfcfa;
+    --gray: #f2f3f1;
+    --accentColor: #a59dff;
+}
+
+body {
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: var(--backgroundColor);
+}
+
+h1, h2, h4 {
+    letter-spacing: -1.6px;
+}
+
+.gradient-text { /*CODE FOUND ONLINE @https://cssgradient.io/blog/css-gradient-text/ */
+    color: white;
+    background: -webkit-linear-gradient(60deg, var(--mainColor1), var(--mainColor2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*HEADER */
+
+header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+    border-block-end: 2px solid var(--gray);
+    background-color: var(--backgroundColor);
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.8s; 
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    background-color: var(--backgroundColor);
+    background-size: cover;
+}
+
+header.sticky {
+    padding: 0px 100px;
+    background: var(--backgroundColor);
+    border-block-end: 2px solid var(--gray);
+}
+
+header.sticky ul li a {
+    color: #000000;
+
+}
+
+/*  END OF HEADER */
+
+/* MAIN AREA */
+
+#title { /*CODE FOUND ONLINE @https://cssgradient.io/blog/css-gradient-text/ */
+    color: white;
+    font-size: 120px;
+    background: -webkit-linear-gradient(60deg, var(--mainColor1), var(--mainColor2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#arrow {
+    border-radius: 3.5em;
+    padding: 2em;
+    height: 1em;
+    margin-block-start: 20em;
+    background-color: var(--gray);
+    border: 2px solid var(--accentColor);
+}
+
+/* END OF MAIN AREA */
+
+/* ARTICLES */
+
+main section {
+    text-align: initial;
+    margin: 4em;
+    background-color: var(--backgroundColor);
+    border-radius: 3em;
+    padding: 1em;
+    position: relative;
+    transition: all 2s;
+    display: flex;
+    box-shadow: #000;
+    box-shadow: 0 0 6em rgb(220, 220, 220);
+}
+
+main section:hover {
+    transform: scale(1.03);
+}
+
+main section div {
+    padding: 3em;
+    font-size: x-large
+}
+
+main section h2 {
+    font-size: 1.7em;
+}
+
+main section img {
+    margin-block: auto;
+    height: 30em;
+    border-radius: 2em;
+}
+
+/* END OF ARTICLES */
+
+/* BUTTONS */
+
+.shopnow {
+    color: var(--backgroundColor);
+    font-size: 2em;
+    font-weight: 600;
+    font-family: poppins, sans-serif;
+    padding: 7px;
+    background: -webkit-linear-gradient(60deg, var(--mainColor1), var(--mainColor2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border: 3px solid var(--gray);
+
+    transition-property: transform;
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+    transition: 
+    transform 0.6s,
+    box-shadow 0.6s,
+    border 0.6s;
+    margin-block-end: 100px;
+}
+
+.shopnow:hover {
+    transform: translateY(-10px);
+    box-shadow:  #92aaff 0px 0 100px;
+    border: 4px solid var(--accentColor);
+}
+
+.clickable {
+    transition: transform 0.6s;
+}
+
+.clickable:hover {
+    transform: translateY(-10px);
+}
+
+/* END OF BUTTONS */
+
+/* FOOTER */
+
+footer {
+    margin-block-start: 10em;
+    background-color: var(--backgroundColor);
+    border-block-start: 3px solid var(--gray);
+    padding: 3em;
+}
+
+footer nav {
+    word-spacing: 4em;
+}
+
+footer nav a {
+    text-decoration: none;
+}
+
+/* END OF FOOTER */
+
+/* BUY OPTIONS */
+
+.box-wrapper {
+    margin-block: 6em;
+    font-size: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-inline: 12em;
+}
+
+.box {
+    border: solid #000;
+    line-height: 2em;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    padding-block-start: 1em;
+    text-align: center;
+    margin: 2em;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+    transition: all 0.6s;
+}
+
+.box-wrapper h2 {
+    font: 2em Poppins, sans-serif;
+}
+
+.box-wrapper ul li {
+    font-family: poppins;
+    font-size: large;
+    text-align: left;
+    list-style-position: outside;
+}
+
+.box-wrapper h5 {
+    font-family: poppins;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.box-wrapper p {
+    font-size: small;
+    font-family: poppins;
+    font-weight: lighter;
+    color: #646464;
+}
+
+.boxbutton {
+    font-family: poppins;
+    margin-block-start: 1em;
+    font-size: large;
+    padding: 0.6em;
+    color: #fff;
+    background-color: rgb(21, 21, 21);
+    border: none;
+    transition: all 0.6s;
+}
+
+.box:hover {
+    transform:scale(1.03);
+    box-shadow: #92aaff 0 0 100px;
+}
+
+.boxbutton:hover {
+    color: #000;
+    background-clip: text;
+    background-color: #fff;
+    border: solid 3px #000;
+}
+
+/* END OF BUY OPTIONS */
+/* 
+BENTO GRID */
+
+.bentoWrapper {
+    margin-block-end: 9em;
+    display: grid;
+    grid-template-columns: 0.14fr 0.14fr 0.14fr 0.14fr 0.14fr 0.14fr 0.14fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    margin-inline: 10em;
+    border: 0;
+
+}
+
+.bentoWrapper h3 {
+    font-family: poppins;
+    font-size: 2em;
+}
+.bentoWrapper span {
+    font-family: poppins;
+    font-size: 1em;
+}
+
+.bentoWrapper div {
+    padding: 1em;
+    border-radius: 1em;
+    height: 12em;
+    margin: 4px;
+    transition: all 0.6s;
+}
+
+.bentoWrapper div:nth-of-type(1) {
+    border: solid 3px #b7c6ff;
+    background-color: #b7c6ff;
+    grid-row: 1;
+    grid-column: span 5;
+}
+.bentoWrapper div:nth-of-type(2) {
+    border: solid 3px #bdc6ff;
+    background-color: #bdc6ff;
+    grid-row: 1;
+    grid-column: span 2;
+}
+.bentoWrapper div:nth-of-type(3) {
+    border: solid 3px #e4caff;
+    background-color: #e4caff;
+     grid-row: 2;
+     grid-column: span 3;
+}
+.bentoWrapper div:nth-of-type(4) {
+    border: solid 3px #ddbdff;
+    background-color: #ddbdff;
+    grid-row: 2;
+    grid-column: span 4;
+}
+
+.bentoWrapper div:hover {
+    transform: scale(1.01);
+}
+
+/* END OF BENTO GRID */
+
+/* SUPPORT HOURS TABLE */
+
+
+table {
+    border: 2px solid #000;
+    margin: auto;
+    border-radius: 1em;
+}
+
+tr {
+    border: 2px solid #000;
+    border-radius: 1em;
+}
+
+td {
+    padding: 1em;
+}
+
+td:nth-last-of-type(odd) {
+    text-align: end;
+}
+
+/* END OF SUPPORT HOURS TABLE */
+
+/* SUPPORT FORM */
+
+.supportForm {
+    border-radius: 2em;
+    border: 2px solid #000;
+    padding: 2em;
+    margin: 10em;
+}
+
+/* TRANSITION BETWEEN PAGES*/
+
+main {
+    animation: transitionIn 2s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* END OF TRANSITION BETWEEN PAGES*/
+
+/* MEDIA */
+
+@media (max-width: 768px) {
+
+    main img {
+        display: none;
+    }
+
+    main section {
+        text-align: center;
+        margin: 0em;
+        background-color: var(--backgroundColor);
+        padding: 0.00em;
+        transition: all 0.6s;
+        font-size: 0.2em;
+        box-shadow: none;
+    }
+
+    main section:hover {
+        transform: scale(1);
+    }
+
+    main section p {
+        text-align: center;
+    }
+
+    header {
+        margin: 0;
+        padding:0;
+    }
+    #title { 
+        margin: 0;
+        padding: 0;
+        font-size: 10em;
+        text-align: center;
+    }
+    h1 {
+        font-size: 0.5em;
+    }
+    h2 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font: bold 3em Poppins, sans-serif;
+        font-size: 0.2em;
+    }
+    main {
+        min-height: 0;
+    }
+    .box h5 img {
+        height: 0;
+    }
+    .box {
+        margin: 0;
+    }
+    .box-wrapper {
+        margin: 0;
+    }
+    
+    .box, .box-wrapper {
+        margin: 10px;
+        display: block;
+    }
+
+    .bentoWrapper {
+        display: none
+    }
+
+    .notMobile {
+        display: none;
+    }
+
+    .supportForm {
+        border-radius: 2em;
+        border: 2px solid #000;
+        padding: 0.2em;
+        margin: 0em;
+    }
+    span {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 1390px) {
+
+    .noImages{
+        display: none;
+    }
+}
